@@ -1,0 +1,3 @@
+The data are download from https://www.uniprot.org/downloads. The with the parser the flat file is transformed into a csv file and only the human proteins are taken.
+
+Link:https://github.com/ckoenigs/UniProt_to_Neo4j
