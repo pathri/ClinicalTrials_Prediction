@@ -6,5 +6,5 @@ The program prepare_ndf_rt_to_neo4j_integration.py extract all information out o
 
 ![er_diagram](https://github.com/ckoenigs/master_database_change/blob/master/import_into_Neo4j/ndf_rt/ndf-rt.png)
 
-This program is for ndf-rt 05.02.2018.
+The program is from https://github.com/ckoenigs/NDF-RT_to_Neo4j.
 
