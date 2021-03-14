@@ -75,20 +75,15 @@ Load all Chemical from my database  and add them into a dictionary
 
 
 def load_chemical_from_database_and_add_to_dict():
-    query = "MATCH (n:Chemical) RETURN n, labels(n)"
+    query = "MATCH (n:Compound_DrugBank) RETURN n, labels(n)"
     results = g.run(query)
     for node, labels, in results:
         identifier = node['identifier']
-        resource = node['resource']
+        resource = node['resource'] if 'resource' in node else []
         dict_chemical_id_to_resource[identifier] = resource
 
-        if 'Compound' not in labels:
-            if identifier not in dict_mesh_to_chemical_id:
-                dict_mesh_to_chemical_id[identifier] = set()
-            dict_mesh_to_chemical_id[identifier].add(identifier)
-
         cur = con.cursor()
-        query = ("Select CUI,LAT,CODE,SAB, STR From MRCONSO Where SAB in ('MSH','DRUGBANK') and CODE= '%s';")
+        query = ("Select CUI,LAT,CODE,SAB, STR From MRCONSO Where SAB in ('DRUGBANK') and CODE= '%s';")
         query = query % (identifier)
 
         rows_counter = cur.execute(query)
