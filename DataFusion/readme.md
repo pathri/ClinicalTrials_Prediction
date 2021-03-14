@@ -4,7 +4,7 @@ All the files (python scripts or python notebooks) in this folder deals with dat
 
 ## Brief Description of each file :
 
-* map_ChEMBL_DrugBank.ipynb
+* map_ChEMBL_DrugBank.ipynb - This notebook maps chembl compounds to drugbank.
 * map_ClinicalTrials_DrugBank.ipynb
 * map_ClinicalTrialsCondition_to_CTDDisease.py
 * map_CTDChemical_DrugBank.py
