@@ -5,7 +5,8 @@ def exportCSV(file):
         lines = f.readlines()
         for line in lines:
             i = 0
-            query = '''USING PERIODIC COMMIT LOAD CSV WITH HEADERS FROM \"file:///sas/vidhya/CompoundDb4j/chembl_26_csv/'''
+			#update the path as per your csv files location
+            query = '''USING PERIODIC COMMIT LOAD CSV WITH HEADERS FROM \"file:///sas/vidhya/CompoundDb4j/chembl_27_csv/'''
             for word in line.split():
                 if i==0:
                     query = query + word + ".csv\" AS row FIELDTERMINATOR '\t' CREATE (:"+word+"{"
