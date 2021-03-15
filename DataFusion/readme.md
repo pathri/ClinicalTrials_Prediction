@@ -1,6 +1,6 @@
 # Data Fusion
 
-All the files (python scripts or python notebooks) in this folder deals with data fusion operations i.e intra fusion (mapping between databses) and inter fusion (mapping across databases). 
+All the files (python scripts or python notebooks) in this folder deals with data fusion operations i.e intra fusion (mapping between a database) and inter fusion (mapping across databases). 
 
 ## Brief Description of each file :
 
