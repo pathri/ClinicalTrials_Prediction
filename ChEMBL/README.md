@@ -6,7 +6,7 @@
 
 **Note**: Change the user, password and db according to your MySQL information.
 
-**Step-4**: Make changes in exportCSV function of graphs.py file, change the directory of csv files accordingly. Also make required changes user and password which are mentioned at the end of file. 
+**Step-4**: Change the directory path of csv files accordingly in graphs.py script before executing. Also make required changes for user and password which are mentioned at the end of file. 
 
 **Step-5**: graphs.py files contains different function exportCSV - for exporting CSV data into neo4j ,combine_nodes() - for merging two different types of nodes into a single node based on their primary keys, relationships() for creating relations between different nodes. Run graphs.py file in your desktop in another terminal. After the execution of that file, the data we require is loaded into Neo4J as per the schema. exportCSV function can be used to export all the tables of chembl as nodes (eventhough they are not mentioned in the below schema diagram)
 
