@@ -16,17 +16,15 @@ Machine learning:
     Feature extraction for ML
     Model Training, paramter tuning with supervised algorithms and performance measures
 
-**Pre-requisites for the project**: 
+**Pre-requisites for Neo4j DB Integration**: 
 
-1. MySQL installed in your local system. 
-2. Neo4J-Community edition Application installed in your system. (refer https://neo4j.com/ if you have any queries)
-3. Install py2neo using the command (sudo pip install py2neo).
+1. Neo4J-Community edition is installed ( We used 4.1.3 version of Unix distribution inside anaconda environment ).
 
 Then, Open neo4j_community/conf/neo4j.conf and change the following lines.
 
 1. Comment this line "dbms.directories.import=import"
 2. Change the value of this line "dbms.security.auth_enabled=true" to false.
-3. Change the value of this line "dbms.memory.heap.max_size=1G" to 10G
+3. Change the value of this line "dbms.memory.heap.max_size=1G" to 70G
 4. Add this line "dbms.security.allow_csv_import_from_file_urls=true"
 
 Now,to start the graph, open terminal and go to neo4j community folder and run the following command : ./bin/neo4j console 
