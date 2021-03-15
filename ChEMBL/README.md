@@ -6,9 +6,9 @@
 
 **Note**: Change the user, password and db according to your MySQL information.
 
-**Step-4**: Change the directory path of csv files accordingly in [graphs.py](https://github.com/ambf0632/CompoundDb4jML/blob/main/ChEMBL/graphs.py) script before executing. Also make required changes for user and password which are mentioned at the end of file. 
+**Step-3**: Change the directory path of csv files accordingly in [graphs.py](https://github.com/ambf0632/CompoundDb4jML/blob/main/ChEMBL/graphs.py) script before executing. Also make required changes for user and password which are mentioned at the end of file. 
 
-**Step-5**: graphs.py files contains different function exportCSV - for exporting CSV data into neo4j ,combine_nodes() - for merging two different types of nodes into a single node based on their primary keys, relationships() for creating relations between different nodes. Run graphs.py file in your desktop in another terminal. After the execution of that file, the data we require is loaded into Neo4J as per the schema. exportCSV function can be used to export all the tables of chembl as nodes (eventhough they are not mentioned in the below schema diagram)
+**Step-4**: graphs.py files contains different function exportCSV - for exporting CSV data into neo4j ,combine_nodes() - for merging two different types of nodes into a single node based on their primary keys, relationships() for creating relations between different nodes. Run graphs.py file in your desktop in another terminal. After the execution of that file, the data we require is loaded into Neo4J as per the schema. exportCSV function can be used to export all the tables of chembl as nodes (eventhough they are not mentioned in the below schema diagram)
 
 This is how we merged the nodes and how we formed relations among different nodes:
 ![alt text](https://github.com/ambf0632/compoundDB4j/blob/master/ChEMBL/chembl_diagram_with_Chembl_er_schema.png)
