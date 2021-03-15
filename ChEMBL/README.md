@@ -1,6 +1,6 @@
 # ChEMBL data population into Neo4J
 
-**Step-1**: Download the Chembl_27 database and load the dump file into MySQL in your local system.
+**Step-1**: Download the [chembl_27_mysql.tar.gz ](http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_27/) dump and load the dump file into MySQL in your local system.
 
 **Step-2**: Run convertToCSV.py file in the terminal. The script will create the CSV files with required columns. The required columns list should be in schema_select_tables.txt file)
 
