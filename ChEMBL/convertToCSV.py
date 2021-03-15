@@ -4,7 +4,7 @@ def execute(c, command):
     c.execute(command)
     return c.fetchall()
 
-db = pymysql.connect(host='localhost', port=3306, user='root', passwd='yourpswd', db='chembl_26') #, charset='utf8')
+db = pymysql.connect(host='localhost', port=3306, user='root', passwd='yourpswd', db='chembl_27') #, charset='utf8')
 
 c = db.cursor()
 
