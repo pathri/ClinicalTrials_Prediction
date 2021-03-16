@@ -1,6 +1,6 @@
 from py2neo import Graph, Node, Relationship
 file1 = open("clinical.cypher","w")
-def exportCSV(file):
+def clinicalTrialsDataToNeo4j(file):
     with open(file) as f:
         lines = f.readlines()
         for line in lines:
@@ -24,4 +24,4 @@ def exportCSV(file):
 
 
 
-exportCSV("clinicaltrials.txt")
+clinicalTrialsDataToNeo4j("clinicaltrials.txt")
