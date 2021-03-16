@@ -1,15 +1,8 @@
 
 ### Clinical Trials data population into Neo4J
 
-For importing and integrating clinical trails, the file integrating_clinicaltrials_with_neo4j.py has to be executed.
+For populating ClinicalTrails data into Neo4J, we need to execute [integrating_clinicaltrials_with_neo4j.py](https://github.com/ambf0632/CompoundDb4jML/blob/main/ClinicalTrials/integrating_clinicaltrials_with_neo4j.py) script.
 
-The file clinicaltrials.txt has the schema of the Clinical Trials database. This is given as an input to the exportCSV function which imports all the data as nodes in to neo4j.
+The file [clinicaltrials.txt](https://github.com/ambf0632/CompoundDb4jML/blob/main/ClinicalTrials/clinicaltrials.txt) has the schema of the Clinical Trials database. This is given as an input to the clinicalTrialsDataToNeo4j() function which imports all the data as nodes in to neo4j.
 
-After importing all the required nodes to Neo4j, for creating the relations between DrugBank and Clinical trials, cypher files are created by giving proper input to the function relationClinicalTrial. 
-
-For this function, we have to input the files created after executing the file https://github.com/ambf0632/CompoundDb4jML/blob/main/DataFusion/C4jV2DataFusion_ClinTrials.ipynb.
-
-Additionally, details like from table, to table, from attribute, to attribute are also given as input to generate the cypher files. On executing the integrating_clinicaltrials_with_neo4j.py, cypher file is generated with commands which creates relationship between 
-- Salts of durgbank and clinicaltrials fda applications
-- products of drugbank and clinicaltrials fda applications
-- compounds of drugbank and clinicaltrials fda applications
+Result of the above execute file is a cypher file which can be given 
