@@ -13,7 +13,7 @@ All the files (python scripts or python notebooks) in this folder deals with dat
 * [map_ClinicalTrialsCondition_to_CTDDisease.py](https://github.com/ambf0632/CompoundDb4jML/blob/main/DataFusion/map_ClinicalTrialsCondition_to_CTDDisease.py)
 	* This script provides sources for integration between ClinicalTrials Conditions and CTD Disease.
 * [map_ClinicalTrials_DrugBank.ipynb](https://github.com/ambf0632/CompoundDb4jML/blob/main/DataFusion/map_ClinicalTrials_DrugBank.ipynb)
-	* This script provides sources for integration between ClinicalTrials and DrugBank.
+	* This notebook provides sources for integration between ClinicalTrials and DrugBank.
 * [map_NDFRTDrug_DrugBank.py](https://github.com/ambf0632/CompoundDb4jML/blob/main/DataFusion/map_NDFRTDrug_DrugBank.py)
 	* This script provides sources for integration between NDFRT Drug and DrugBank.
 * [map_NDFRTIngredient_DrugBank.py](https://github.com/ambf0632/CompoundDb4jML/blob/main/DataFusion/map_NDFRTIngredient_DrugBank.py)
