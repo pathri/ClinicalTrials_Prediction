@@ -7,7 +7,7 @@ All the files (python scripts or python notebooks) in this folder deals with dat
 * [map_CTDChemical_DrugBank.py](https://github.com/ambf0632/CompoundDb4jML/blob/main/DataFusion/map_CTDChemical_DrugBank.py)
  	* This script provides sources for integration between CTD and DrugBank.
 * [map_CTDGene_UniProtProtein.py](https://github.com/ambf0632/CompoundDb4jML/blob/main/DataFusion/map_CTDGene_UniProtProtein.py)
-	* * This script provides sources for integration between CTD Gene and UniProt Protein. 
+	* This script provides sources for integration between CTD Gene and UniProt Protein. 
 * [map_ChEMBL_DrugBank.ipynb](https://github.com/ambf0632/CompoundDb4jML/blob/main/DataFusion/map_ChEMBL_DrugBank.ipynb)
 	* This notebook provide sources for integration between between DrugBank and ChEMBL.
 * [map_ClinicalTrialsCondition_to_CTDDisease.py](https://github.com/ambf0632/CompoundDb4jML/blob/main/DataFusion/map_ClinicalTrialsCondition_to_CTDDisease.py)
