@@ -1,5 +1,5 @@
 from py2neo import Graph, Node, Relationship
-file1 = open("clinical.cypher","w")
+file1 = open("clinicalTrailsData.cypher","w")
 def clinicalTrialsDataToNeo4j(file):
     with open(file) as f:
         lines = f.readlines()
