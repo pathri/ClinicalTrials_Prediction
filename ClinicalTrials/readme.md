@@ -6,3 +6,8 @@
 * Execution of clinicalTrailsData.cypher will populate the ClinicalTrials data into Neo4J.
 * Terminal Command to execute clinicalTrailsData.cypher
      * cat clinicalTrailsData.cypher |  /..../neo4j-community-4.1.3/bin/cypher-shell -u username -p password -a bolt://localhost:7687 > cypher_output.txt
+
+
+
+![image](https://user-images.githubusercontent.com/59961900/111308438-b117e080-8680-11eb-968a-294d61541c56.png)
+
