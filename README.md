@@ -6,7 +6,7 @@ This repo contains the source code for "Machine learning and bioinformatics mode
 
 Artifacts:
     Data Integration of multiple heterogenous chemical databases to Neo4j.
-    These databases are DrugBank, ChEMBL, CTD, NDFRT, UniProt Pubchem and USPTO.
+    These databases are DrugBank, ChEMBL, CTD, and UniProt.
 
 DataFusion: 
     Mapping across database and within a database 
