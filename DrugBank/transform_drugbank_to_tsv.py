@@ -460,20 +460,6 @@ for i, drug in enumerate(root):
                      drug.findall("{ns}groups/{ns}group".format(ns=ns))]
     row['atc_codes'] = [code.get('code') for code in
                         drug.findall("{ns}atc-codes/{ns}atc-code".format(ns=ns))]
-    # prepare atc code for extracting atc structure
-    for atc_code in drug.findall("{ns}atc-codes/{ns}atc-code".format(ns=ns)):
-        atc_id = atc_code.get('code')
-        if atc_id not in dict_atc_nodes:
-            dict_atc_nodes[atc_id] = ''
-
-        atc_before = atc_id
-
-        for general_atc in atc_code.findall("{ns}level".format(ns=ns)):
-            atc_id = general_atc.get('code')
-            if atc_id not in dict_atc_nodes:
-                dict_atc_nodes[atc_id] = general_atc.text
-            set_atc_edges.add((atc_id, atc_before))
-            atc_before = atc_id
 
     #    row['categories'] = [x.findtext(ns + 'category') for x in
     #        drug.findall("{ns}categories/{ns}category".format(ns = ns))]
@@ -1221,49 +1207,4 @@ generate_tsv_file(columns_reaction_right_db, reactions_right_db, 'drugbank_react
 generate_tsv_file(columns_reaction_right_dbmet, reactions_right_dbmet, 'drugbank_reaction_to_right_dbmet.tsv')
 generate_tsv_file(columns_reaction_enzyme, reactions_to_protein, 'drugbank_reaction_to_protein.tsv')
 
-# prepare atc integration
 
-# path to directory of project
-if len(sys.argv) < 1:
-    sys.exit('need a path')
-path_of_directory = sys.argv[1]
-
-cypher_file = open('cypher_atc.cypher', 'w', encoding='utf-8')
-
-query_start = '''Using Periodic Commit 10000 Load CSV  WITH HEADERS From "file:''' + path_of_directory + '''master_database_change/import_into_Neo4j/drugbank/%s" As line FIELDTERMINATOR '\t' '''
-
-# write info into csv file
-atc_file_name = 'atc_node.tsv'
-atc_file = open(atc_file_name, 'w', encoding='utf-8')
-csv_atc = csv.writer(atc_file, delimiter='\t')
-csv_atc.writerow(['id', 'name'])
-for identifier, name in dict_atc_nodes.items():
-    csv_atc.writerow([identifier, name])
-atc_file.close()
-
-# prepare act node queries
-query = query_start + " Create (n:atc{identifier:line.id, name:line.name});\n"
-query = query % (atc_file_name)
-cypher_file.write(query)
-cypher_file.write(':begin\n')
-cypher_file.write('Create Constraint On (node:atc) Assert node.identifier Is Unique; \n')
-cypher_file.write(':commit\n')
-
-# prepare atc edge file
-atc_file_name = 'atc_edge.tsv'
-atc_file = open(atc_file_name, 'w', encoding='utf-8')
-csv_atc = csv.writer(atc_file, delimiter='\t')
-csv_atc.writerow(['id_upper', 'id_down'])
-for (identifier_upper, identifier_down) in set_atc_edges:
-    csv_atc.writerow([identifier_upper, identifier_down])
-atc_file.close()
-#prepare atc edge query
-query = query_start + " Match (n:atc{identifier:line.id_upper}), (m:atc{identifier:line.id_down}) Create (n)<-[:is_a]-(m);\n"
-query = query % (atc_file_name)
-cypher_file.write(query)
-
-print(datetime.datetime.utcnow())
-
-# write drugbank tsv
-# path = os.path.join('drugbank', 'drugbank_interaction.tsv')
-# drugbank_df_drug_interaction.to_csv(path, sep='\t', index=False)
