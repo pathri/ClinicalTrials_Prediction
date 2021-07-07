@@ -9,7 +9,8 @@ AACT data comprises multiple tables as in schema : https://aact.ctti-clinicaltri
 In this study we make use of core information such as Studies, Interventions and Conditions. NCT_ID serves as an unique identifier. 
 
 We join the tables based on NCT_ID (https://github.com/ambf0632/CompoundDb4jML/blob/main/ClinicalTrials_AACT/join_studies_conditions_interv_03_21.py)
-.cypher files are used to create nodes in Neo4j (cypher_createconditions, cypher_createintervention, cypher_createstudies)
+
+We prepare cypher files to create nodes in Neo4j (cypher_createconditions, cypher_createintervention, cypher_createstudies)
 
 Files with 'relation_' in names are used to create relations in Neo4j
   	* relation_studies => Creates relation between AACT_Studies and AACT_Interventions_Drug, AACT_Interventions_Drug and AACT_Condition
