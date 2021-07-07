@@ -19,3 +19,4 @@ Files with 'relation_' in names are used to create relations in Neo4j
 	* relation_ctd_trials => Creates relation between AACT_Condition -> CTD_disease    
 
 
+![image](https://user-images.githubusercontent.com/59961900/124712810-64049680-df1d-11eb-9b40-0e4013ead586.png)
