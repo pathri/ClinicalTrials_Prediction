@@ -14,6 +14,9 @@ We prepare cypher files to create nodes in Neo4j (cypher_createconditions, cyphe
 
 Files with 'relation_' in names are used to create relations in Neo4j
   	* relation_studies => Creates relation between AACT_Studies and AACT_Interventions_Drug, AACT_Interventions_Drug and AACT_Condition
+	* relation_trials_drugbank => Creates relation between AACT_Interventions_Drug -> Compound_DrugBank, Salt_DrugBank
+	* relation_ctd_trials => Creates relation between AACT_Condition -> CTD_disease    
+
 	
 
 
