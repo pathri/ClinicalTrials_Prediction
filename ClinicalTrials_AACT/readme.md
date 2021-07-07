@@ -12,8 +12,8 @@ We join the tables based on NCT_ID (https://github.com/ambf0632/CompoundDb4jML/b
 .cypher files are used to create nodes in Neo4j (cypher_createconditions, cypher_createintervention, cypher_createstudies)
 
 Files with 'relation_' in names are used to create relations in Neo4j
-  relation_studies => Creates relation between AACT_Studies and AACT_Interventions_Drug, AACT_Interventions_Drug and AACT_Condition
-	relation_trials_drugbank => Creates relation between AACT_Interventions_Drug -> Compound_DrugBank, Salt_DrugBank
-	relation_ctd_trials => Creates relation between AACT_Condition -> CTD_disease    
+  	* relation_studies => Creates relation between AACT_Studies and AACT_Interventions_Drug, AACT_Interventions_Drug and AACT_Condition
+	* relation_trials_drugbank => Creates relation between AACT_Interventions_Drug -> Compound_DrugBank, Salt_DrugBank
+	* relation_ctd_trials => Creates relation between AACT_Condition -> CTD_disease    
 
 
