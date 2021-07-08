@@ -1,4 +1,4 @@
-# CompoundDb4jML
+# ClinicalTrials_Prediction
 
 
 
