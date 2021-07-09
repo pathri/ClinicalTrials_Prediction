@@ -1,4 +1,6 @@
 # ChEMBL data population into Neo4J
+Gaulton A, Hersey A, Nowotka M, Bento AP, Chambers J, Mendez D, Mutowo P, Atkinson F, Bellis LJ, Cibrián-Uhalte E, Davies M. The ChEMBL database in 2017. Nucleic acids research. 2017 Jan 4;45(D1):D945-54.
+
 **Step-1**: Install MySql in your local system. And also Install py2neo using the command (sudo pip install py2neo).
 
 **Step-2**: Download the [chembl_27_mysql.tar.gz ](http://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_27/) dump and load the dump file into MySQL in your local system.
