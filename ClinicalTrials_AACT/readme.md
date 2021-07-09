@@ -1,5 +1,6 @@
 
 # ClinicalTrials - AACT data population into Neo4J
+Tasneem A, Aberle L, Ananth H, Chakraborty S, Chiswell K, McCourt BJ, Pietrobon R. The database for aggregate analysis of ClinicalTrials. gov (AACT) and subsequent regrouping by clinical specialty. PloS one. 2012 Mar 16;7(3):e33677.
 
 Clinical Trials dataset used is downloaded in pipe delimited falt file format. Data as on March 2021 can be downloaded from https://aact.ctti-clinicaltrials.org/static/exported_files/monthly/20210301_pipe-delimited-export.zip
 
