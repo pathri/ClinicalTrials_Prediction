@@ -1,6 +1,7 @@
 # DrugBank_to_Neo4j
 This integrates all open source data of DrugBank into Neo4j.
 
+Wishart DS, Feunang YD, Guo AC, Lo EJ, Marcu A, Grant JR, Sajed T, Johnson D, Li C, Sayeeda Z, Assempour N. DrugBank 5.0: a major update to the DrugBank database for 2018. Nucleic acids research. 2018 Jan 4;46(D1):D1074-82.
 
 This populates DrugBank (https://www.drugbank.ca/downloads) into Neo4j, but first we transform the data to tsv files with 
 https://github.com/dhimmel/drugbank/blob/gh-pages/parse.ipynb
