@@ -1,3 +1,5 @@
-The data are download from https://www.uniprot.org/downloads. The with the parser the flat file is transformed into a csv file and only the human proteins are taken.
+"UniProt: the universal protein knowledgebase in 2021." Nucleic Acids Research 49, no. D1 (2021): D480-D489
+
+The data is download from https://www.uniprot.org/downloads. Then with the parser the flat file is transformed into a csv file and only the human proteins are taken.
 
 Link:https://github.com/ckoenigs/UniProt_to_Neo4j
