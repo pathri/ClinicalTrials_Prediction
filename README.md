@@ -20,16 +20,17 @@ Machine learning:
 
 1. Neo4J-Community edition is installed ( We used 4.1.3 version of Unix distribution inside anaconda environment ).
 
-Then, Open neo4j_community/conf/neo4j.conf and change the following lines.
+2. Open neo4j_community/conf/neo4j.conf and change the following lines.
 
-1. Comment this line "dbms.directories.import=import"
-2. Change the value of this line "dbms.security.auth_enabled=true" to false.
-3. Change the value of this line "dbms.memory.heap.max_size=1G" to 70G
-4. Add this line "dbms.security.allow_csv_import_from_file_urls=true"
+    1. Comment this line "dbms.directories.import=import"
+    2. Change the value of this line "dbms.security.auth_enabled=true" to false.
+    3. Change the value of this line "dbms.memory.heap.max_size=1G" to 70G
+    4. Add this line "dbms.security.allow_csv_import_from_file_urls=true"
 
 Now,to start the graph, open terminal and go to neo4j community folder and run the following command : ./bin/neo4j console 
 
 
-Note: 
-The integrated data can be download from Figshare : https://doi.org/10.6084/m9.figshare.18631901 
-Copy the unzipped file to data folder of Neo4j (e.g. neo4j-community-4.1.3/data/databases)
+**Note**:  
+
+    The integrated data can be download from Figshare : https://doi.org/10.6084/m9.figshare.18631901     
+    Copy the unzipped file to data folder of Neo4j (e.g. neo4j-community-4.1.3/data/databases)
