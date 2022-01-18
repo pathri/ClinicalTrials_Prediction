@@ -2,7 +2,7 @@
 
 
 
-This repo contains the source code for "Machine learning and bioinformatics models to predict the success of clinical trial with an integrated drug resource"
+This repo contains the source code for "Predicting Clinical Trial Outcomes Using Drug Bioactivities through Graph Database Integration and Ensemble Learning"
 
 Artifacts:
     Data Integration of multiple heterogenous chemical databases to Neo4j.
