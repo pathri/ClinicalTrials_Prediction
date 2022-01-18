@@ -6,7 +6,7 @@ This repo contains the source code for "Machine learning and bioinformatics mode
 
 Artifacts:
     Data Integration of multiple heterogenous chemical databases to Neo4j.
-    These databases are DrugBank, ChEMBL, CTD, and UniProt.
+    These databases are DrugBank, ChEMBL, AACT, CTD, and UniProt.
 
 DataFusion: 
     Mapping across database and within a database 
@@ -28,3 +28,8 @@ Then, Open neo4j_community/conf/neo4j.conf and change the following lines.
 4. Add this line "dbms.security.allow_csv_import_from_file_urls=true"
 
 Now,to start the graph, open terminal and go to neo4j community folder and run the following command : ./bin/neo4j console 
+
+
+Note: 
+The integrated data can be download from Figshare : https://doi.org/10.6084/m9.figshare.18631901 
+Copy the unzipped file to data folder of Neo4j (e.g. neo4j-community-4.1.3/data/databases)
