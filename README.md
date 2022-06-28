@@ -36,14 +36,8 @@ Now,to start the graph, open terminal and go to neo4j community folder and run t
     Copy the unzipped file to data folder of Neo4j (e.g. neo4j-community-4.1.3/data/databases)
 	
 
-#Citation
+# Citation
 
 If you find the work useful in your research, please consider citing:
 
-@article{murali2022predicting,
-  title={Predicting Clinical Trial Outcomes Using Drug Bioactivities through Graph Database Integration and Machine Learning},
-  author={Murali, Vidhya and Pradyumna, YM and K{\"o}nigs, Cassandra and Nair, Meera and Nedungadi, Prema and Srinivasa, Gowri and Athri, Prashanth},
-  journal={Chemical Biology \& Drug Design},
-  year={2022},
-  publisher={Wiley Online Library}
-}
+Murali, V., Pradyumna, Y. M., Königs, C., Nair, M., Nedungadi, P., Srinivasa, G., & Athri, P. (2022). Predicting Clinical Trial Outcomes Using Drug Bioactivities through Graph Database Integration and Machine Learning. Chemical Biology & Drug Design.
